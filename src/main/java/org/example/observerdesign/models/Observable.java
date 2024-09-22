@@ -33,7 +33,7 @@ public class Observable implements ObservableInterface {
         if(stock==0){
             notifyObservers();
         }
-        stock=stock+t;
+        stock=t;
     }
 
     public Integer getStock() {

@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.abstractfactorydesign.RunAbstractFactory;
 import org.example.decoratordesign.RunDecorator;
 import org.example.factorydesign.RunFactory;
 import org.example.observerdesign.RunObserver;
@@ -18,7 +19,10 @@ public class Main {
 //        RunDecorator runDecorator = new RunDecorator();
 //        runDecorator.runDesignPattern();
 
-        RunFactory runFactory = new RunFactory();
-        runFactory.runDesignPattern();
+//        RunFactory runFactory = new RunFactory();
+//        runFactory.runDesignPattern();
+
+        RunAbstractFactory runAbstractFactory = new RunAbstractFactory();
+        runAbstractFactory.runDesignPattern();
     }
 }

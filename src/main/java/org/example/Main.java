@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.decoratordesign.RunDecorator;
 import org.example.observerdesign.RunObserver;
 import org.example.strategydesign.RunStrategy;
 
@@ -10,7 +11,10 @@ public class Main {
 //        RunStrategy runStrategy = new RunStrategy();
 //        runStrategy.runDesignPattern();
 
-        RunObserver runObserver = new RunObserver();
-        runObserver.runDesignPattern();
+//        RunObserver runObserver = new RunObserver();
+//        runObserver.runDesignPattern();
+
+        RunDecorator runDecorator = new RunDecorator();
+        runDecorator.runDesignPattern();
     }
 }

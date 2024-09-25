@@ -6,6 +6,7 @@ import org.example.factorydesign.RunFactory;
 import org.example.observerdesign.RunObserver;
 import org.example.responsibilitychaindesign.RunChain;
 import org.example.strategydesign.RunStrategy;
+import org.example.tictactoegame.TicTacToeGame;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -26,7 +27,11 @@ public class Main {
 //        RunAbstractFactory runAbstractFactory = new RunAbstractFactory();
 //        runAbstractFactory.runDesignPattern();
 
-        RunChain runChain = new RunChain();
-        runChain.runPattern();
+//        RunChain runChain = new RunChain();
+//        runChain.runPattern();
+
+        TicTacToeGame game = new TicTacToeGame();
+        game.initializeBoard();
+        System.out.println(game.runGame());
     }
 }

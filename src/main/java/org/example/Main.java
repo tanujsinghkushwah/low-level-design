@@ -4,6 +4,7 @@ import org.example.abstractfactorydesign.RunAbstractFactory;
 import org.example.decoratordesign.RunDecorator;
 import org.example.factorydesign.RunFactory;
 import org.example.observerdesign.RunObserver;
+import org.example.responsibilitychaindesign.RunChain;
 import org.example.strategydesign.RunStrategy;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -22,7 +23,10 @@ public class Main {
 //        RunFactory runFactory = new RunFactory();
 //        runFactory.runDesignPattern();
 
-        RunAbstractFactory runAbstractFactory = new RunAbstractFactory();
-        runAbstractFactory.runDesignPattern();
+//        RunAbstractFactory runAbstractFactory = new RunAbstractFactory();
+//        runAbstractFactory.runDesignPattern();
+
+        RunChain runChain = new RunChain();
+        runChain.runPattern();
     }
 }
